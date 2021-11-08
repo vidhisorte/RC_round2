@@ -4,19 +4,20 @@ body{
 }
 .maindiv{
     width: 70%;
-    height: auto;
+    /* height: auto; */
+    height: 78%;
     position: absolute;
     left: 50%;
-    top: 75%;
+    /* top: 75%; */
+    top: 50%;
     bottom: -100%;
     transform:  translate(-50% ,-50%);
-    
     background-size: 100% 100%;
     box-shadow: 1px 2px 15px rgb(14, 13, 13);
     animation: slider 13s infinite linear;
     text-align: center;
     padding-bottom: 30px;
-    overflow: scroll;
+    overflow-y: scroll;
    
 }
 .heading{
