@@ -1,0 +1,115 @@
+
+
+
+.form-control, .btn {        
+	border-radius: 2px;
+}
+.login-form {
+	width: 350px;
+	margin: 0 auto;
+	padding: 100px 0 30px;
+	margin-top: 25px;		
+}
+.login-form form {
+	
+	border-radius: 2px;
+	
+	
+	font-size: 13px;
+	border: 0.5vh black solid;
+	border-radius: 20px;
+	padding: 30px;	
+	position: relative;	
+}
+.login-form h2 {
+	font-size: 22px;
+	margin: 35px 0 25px;
+}
+.login-form .avatar {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -50px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #fff;
+	border: 0.5vh black solid;
+	padding: 15px;
+	
+}
+.login-form .avatar img {
+	width: 100%;
+}	
+.login-form input[type="checkbox"] {
+	position: relative;
+	top: 1px;
+}
+.login-form .btn, .login-form .btn:active {        
+	font-size: 16px;
+	font-weight: bold;
+	background: #053f3b !important;
+	border: none;
+	margin-bottom: 20px;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+	background: #0a3f3c !important;
+}    
+.login-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.login-form a:hover {
+	text-decoration: none;
+}
+.login-form form a {
+	color: #7a7a7a;
+	text-decoration: none;
+}
+.login-form form a:hover {
+	text-decoration: underline;
+}
+.login-form .bottom-action {
+	font-size: 14px;
+}
+#radio_1{
+	text-align: center;
+	align-items: center;
+}
+#radio_2{
+	text-align: center;
+	align-items: center;
+}
+h1{
+	text-align: center;
+	margin-top: 20px;
+}
+.container-2{
+	border: 0.5vh black solid;
+	text-align: right;
+}
+
+#col-1{
+	border: 0.5vh black solid;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+#col-2{
+	/*  */
+	font-weight: bold;
+	font-size: 40px;
+	text-align:center;
+	margin-top: 8vh;
+}
+#col-3{
+	border: 0.5vh black solid;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: right;
+}
+.radio{
+	text-align: center;
+}
