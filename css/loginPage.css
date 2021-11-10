@@ -7,8 +7,9 @@
 .login-form {
 	width: 350px;
 	margin: 0 auto;
-	padding: 100px 0 30px;
-	margin-top: 25px;		
+	padding: 50px 0 30px;
+	
+	/* margin-bottom: 30px;		 */
 }
 .login-form form {
 	
@@ -102,7 +103,9 @@ h1{
 	font-weight: bold;
 	font-size: 40px;
 	text-align:center;
-	margin-top: 8vh;
+	margin-top: 6vh;
+
+	
 }
 #col-3{
 	border: 0.5vh black solid;
@@ -112,4 +115,17 @@ h1{
 }
 .radio{
 	text-align: center;
+}
+
+@media(max-width: 350px){
+
+	#col-2{
+		justify-content: center;
+		word-wrap: normal;
+	}
+
+	.login-form{
+		padding: 30px;
+		padding-bottom: 0px;
+	}
 }
