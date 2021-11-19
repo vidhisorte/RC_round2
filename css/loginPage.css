@@ -1,4 +1,23 @@
+body{
+	background-color: #0B0C10;
+}
 
+.glow {
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #ba57f0, 0 0 20px #ba57f0, 0 0 30px #ba57f0, 0 0 40px #ba57f0, 0 0 50px #ba57f0, 0 0 60px #ba57f0, 0 0 70px #ba57f0;
+	}
+	
+	to {
+	  text-shadow: 0 0 20px #ba57f0, 0 0 30px #ba57f0, 0 0 40px #ba57f0, 0 0 50px #ba57f0, 0 0 60px #ba57f0, 0 0 70px #ba57f0, 0 0 80px #ba57f0;
+	}
+  }
 
 
 .form-control, .btn {        
@@ -10,15 +29,17 @@
 	padding: 20px 0 30px;
 	
 	
+	
 	/* margin-bottom: 30px;		 */
 }
 .login-form form {
 	
 	border-radius: 2px;
-	
-	
+	background-color: #13051b;
+	border: 0.1vh #ddd7d7 solid;
+	box-shadow: 4px 8px 8px #ba57f0;
 	font-size: 13px;
-	border: 0.5vh black solid;
+	/* border: 0.5vh black solid; */
 	border-radius: 20px;
 	padding: 20px;	
 	position: relative;	
@@ -26,6 +47,7 @@
 .login-form h2 {
 	font-size: 22px;
 	margin: 35px 0 25px;
+	color: #ba57f0;
 }
 .login-form .avatar {
 	position: absolute;
@@ -52,12 +74,13 @@
 .login-form .btn, .login-form .btn:active {        
 	font-size: 16px;
 	font-weight: bold;
-	background: #053f3b !important;
+	
+	background: #0c0325 !important;
 	border: none;
 	margin-bottom: 20px;
 }
 .login-form .btn:hover, .login-form .btn:focus {
-	background: #0a3f3c !important;
+	background: #0c0325 !important;
 }    
 .login-form a {
 	color: #fff;
@@ -84,6 +107,17 @@
 	text-align: center;
 	align-items: center;
 }
+
+input[type=text],input[type=password]{
+	
+	/* box-shadow: 2px 4px 4px #ba57f0; */
+}
+
+#button{
+	border: 0.2vh solid #ba57f0;
+	/* box-shadow: 2px 4px 4px #ba57f0; */
+	
+}
 h1{
 	text-align: center;
 	margin-top: 20px;
@@ -105,9 +139,10 @@ h1{
 	font-size: 40px;
 	text-align:center;
 	margin-top: 2vh;
-
+	color: #0f0a11;
 	
 }
+
 #col-3{
 	border: 0.5vh black solid;
 	font-weight: bold;
@@ -116,10 +151,22 @@ h1{
 }
 .radio{
 	text-align: center;
+	
+}
+
+.radio-label{
+	
+	color: #ffffff;
 }
 
 .footer{
 	position: fixed;
+	
+}
+
+#footer{
+	background-color: #0B0C10;
+	color:  #ba57f0;
 }
 
 @media(max-width: 350px){
