@@ -1,5 +1,5 @@
 body {
-  background: rgb(44, 44, 187);
+  /* background: rgb(44, 44, 187);
   background: linear-gradient(
     90deg,
     rgba(44, 44, 187, 1) 0%,
@@ -15,7 +15,9 @@ body {
     rgba(0, 0, 0, 1) 100%,
     rgba(0, 0, 0, 1) 100%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
+  background-color: #112726;
+  color: #6cf9f0;
 }
 .box {
   margin-left: 1%;
@@ -39,7 +41,7 @@ body {
   text-align: center;
   padding-bottom: 7%;
   margin-top: 5%;
-  border: 1px solid black;
+  border: 1px solid #6cf9f0;
 }
 .leftcol .username {
   margin-top: 10px;
@@ -50,22 +52,40 @@ body {
 }
 .data {
   margin-top: 15%;
+  color: #6cf9f0;
 }
+
 tr {
   text-align: center;
   height: 43px;
+  border: 1px solid #6cf9f0;
+  color: #6cf9f0;
+  margin-bottom: 0;
 }
 
 .rightcol {
   height: max-content;
 }
 .data1 {
-  border-color: transparent;
+  border-color: #6cf9f0;
+}
+.datarows{
+  border-bottom: 1px solid #6cf9f0;
 }
 .table-responsive {
-  box-shadow: 0px 5px 20px 2px #020024;
+  box-shadow: 4px 4px 8px #6cf9f0;
   border-radius: 50px;
+  border: 1px solid #6cf9f0;
+  margin-top: 15px;
 }
+.navbar{
+  border-bottom:1px solid#6cf9f0;
+}
+.navbar-brand,
+.nav-link{
+  color: #6cf9f0;
+}
+
 .table-responsive::-webkit-scrollbar {
   display: none;
 }
@@ -116,11 +136,11 @@ tr {
 }
 
 .circular-chart.blue .circle {
-  stroke: #3c9ee5;
+  stroke: #6cf9f0;
 }
 
 .percentage {
-  fill: black;
+  fill: #6cf9f0;
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
@@ -130,14 +150,21 @@ tr {
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  /* background-color: #020024; */
+  /* background-color: #6cf9f0; */
   padding: auto;
 }
 .pagination > li > span {
   background-color: transparent;
   cursor: pointer;
+  color: #6cf9f0;
 }
 
+
+footer{
+  border-top:1px solid#6cf9f0;
+  height: 50px;
+
+}
 @media (max-width: 768px) {
   .leftcol {
     height: max-content;
@@ -168,10 +195,12 @@ tr {
     width: 50%;
   }
   .rightcol {
-    margin-bottom: 5%;
+    margin-bottom: 12%;
     height: 90vh;
   }
   .table-responsive {
     border-radius: 0%;
+    margin-top: 0;
   }
+
 }
