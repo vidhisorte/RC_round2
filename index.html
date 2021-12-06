@@ -15,38 +15,135 @@
     /> 
     <link rel="stylesheet" href="index.css">
   </head>
+
+  <style>
+    .pisblogo{
+        float: right;
+        height: 50px;
+        width: 150px;
+        margin-left: auto;
+    }
+
+    .rclogo{
+        height: 50px;
+        width: 100px;
+    }
+
+    .nav-link{
+        border: 1px;
+    }
+
+    .title{
+        margin-left: auto;
+        display: inline-block;
+        color: #6cf9f0;
+    }
+
+    .timer{
+        display: inline-block;
+        /* margin-left: auto; */
+        color: #6cf9f0;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: auto;
+    }
+
+    li {
+        /* margin-left: auto; */
+        display: inline-block;
+        font-size: 1em;
+        list-style-type: none;
+        padding: 0.5em;
+        text-transform: uppercase;
+    }
+
+    #countdown{
+        /* margin-left: auto; */
+        /* margin-right: 40px; */
+        /* display: inline-block; */
+        margin-left: 200px;
+        font-size: 20px;
+        /* margin-top: 10px; */
+    }
+
+    .navbar{
+    background-color: #03121d !important;
+    /* height: 70px; */
+    }
+    .navbar-1,.nav-link,.nav-item{
+        color: #6cf9f0;
+    }
+
+    .footer{
+    position: fixed;
+    height: 55px;
+    background-color: #03121d !important;
+    }
+
+    #footer{
+        background-color: #03121d !important;
+        color: #6cf9f0;
+        
+        
+    }
+
+    #home{
+        color: #6cf9f0;
+    }
+
+    #link{
+        color: #6cf9f0;
+    }
+
+    #brand{
+        color: #6cf9f0;
+    }
+</style>
   <body >
     <!-- Navbar goes here -->
-    <nav class="navbar navbar-expand-lg " style="background-color: #112726;border-bottom: 0.5px #6cf9f0 solid;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="color: #6cf9f0;">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #6cf9f0;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: #6cf9f0;">Profile</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link disabled" style="color: #6cf9f0;">Logout</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 9vh;">
+          <div class="container-fluid">
+          <a class="navbar-brand navbar-1" href="#" id="brand"><img src="rclogo.png" class="rclogo" alt="RC"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" id="home" href="../LoginPage/loginPage.html">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#" id="link">Link</a>
+              </li> -->
+              </ul>
+              <div class="title">
+                  <!-- <i class="material-icons title" id="icon">&#xe86f;</i> -->
+                  <!-- <h2 class="title">Instructions</h2> -->
+              </div>
+              <!-- <div>
+                  <div id="countdown">
+                    <ul class="timer">
+                      <li><span id="hours"></span></li>
+                      <li><span id="minutes"></span></li>
+                      <li><span id="seconds"></span></li>
+                    </ul>
+                  </div>
+              </div> -->
+              <div class="pisblogo">
+                  <img src="pisblogo.png" class="pisblogo container-fluid" alt="">
+              </div>
+          </div>
+          </div>
+      </nav>
+      </section>
+      <section>
+          <footer class="text-center fixed-bottom bg-light footer">
+              <div class="container-fluid">
+              <div class="footer-text pt-3 pb-4" id="footer">PISB <span>&copy</span></div>
+              </div>
+          </footer>
+      </section>
 
     <!-- your code goes here -->
     <div class="maindiv"><br>
@@ -81,7 +178,7 @@
               <input type="checkbox" name="" id="checkbox">
                 <p style="margin-top: 20px;"> Check the given box for further proceed</p>
           </div>
-          <a id="btn" class="btn" disabled>Proceed &rarr;</a>
+          <a id="btn" class="btn" href="../QuestionHub/QuestionHub.html" disabled>Proceed &rarr;</a>
       </div>
 
     <!-- Footer goes here -->
