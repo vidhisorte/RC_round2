@@ -13,7 +13,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     /> 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="instructionsPage.css">
   </head>
 
   <style>
@@ -26,7 +26,7 @@
 
     .rclogo{
         height: 50px;
-        width: 100px;
+        width: 75px;
     }
 
     .nav-link{
@@ -111,7 +111,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" id="home" href="../LoginPage/loginPage.html">Home</a>
+                  <a class="nav-link active" aria-current="page" id="home" href="loginPage.html">Home</a>
               </li>
               <!-- <li class="nav-item">
                   <a class="nav-link" href="#" id="link">Link</a>
@@ -178,7 +178,7 @@
               <input type="checkbox" name="" id="checkbox">
                 <p style="margin-top: 20px;"> Check the given box for further proceed</p>
           </div>
-          <a id="btn" class="btn" href="../QuestionHub/QuestionHub.html" disabled>Proceed &rarr;</a>
+          <a id="btn" class="btn" href="QuestionHub.html" disabled>Proceed &rarr;</a>
       </div>
 
     <!-- Footer goes here -->
@@ -195,7 +195,7 @@
   if(checkBox.checked===true){
       console.log(true)
     button.classList.add('enable')
-    button.setAttribute('href','http://localhost:3000') // put which ever link you want 
+    button.setAttribute(QuestionHub.html) // put which ever link you want 
    
   }
   else{

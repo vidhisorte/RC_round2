@@ -19,41 +19,150 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="leaderBoard.css" />
 
-    <title>Hello, world!</title>
+    <title>Leaderboard</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
-            </li>
 
-            <li class="nav-item">
-              <a class="nav-link disabled">Logout</a>
-            </li>
+  <style>
+    
+    .pisblogo{
+        float: right;
+        height: 50px;
+        width: 150px;
+        margin-left: auto;
+    }
+
+    .rclogo{
+        height: 50px;
+        width: 75px;
+    }
+
+    .nav-link{
+        border: 1px;
+    }
+
+    .title{
+        margin-left: auto;
+        display: inline-block;
+        color: #6cf9f0;
+    }
+
+    .timer{
+        display: inline-block;
+        /* margin-left: auto; */
+        color: #6cf9f0;
+        text-decoration: none;
+        list-style-type: none;
+        margin-left: auto;
+    }
+
+    li {
+        /* margin-left: auto; */
+        display: inline-block;
+        font-size: 1em;
+        list-style-type: none;
+        padding: 0.5em;
+        text-transform: uppercase;
+    }
+
+    #countdown{
+        /* margin-left: auto; */
+        /* margin-right: 40px; */
+        /* display: inline-block; */
+        margin-left: 200px;
+        font-size: 20px;
+        /* margin-top: 10px; */
+    }
+
+    .navbar{
+    background-color: #03121d !important;
+    /* height: 70px; */
+    }
+    .navbar-1,.nav-link,.nav-item{
+        color: #6cf9f0;
+    }
+
+    .footer{
+    position: fixed;
+    height: 55px;
+    background-color: #03121d !important;
+    }
+
+    #footer{
+        background-color: #03121d !important;
+        color: #6cf9f0;
+        
+    }
+
+    #home{
+        color: #6cf9f0;
+    }
+
+    #link{
+        color: #6cf9f0;
+    }
+
+    #brand{
+        color: #6cf9f0;
+    }
+
+    /* #icon{
+        margin-left: 100px;
+    } */
+
+    /* .logout{
+        margin-left: 100px; 
+        margin-right: 100px;
+        float: right;
+    } */
+</style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 9vh;">
+      <div class="container-fluid">
+      <a class="navbar-brand navbar-1" href="#" id="brand"><img src="rclogo.png" class="rclogo" alt="RC"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" id="home" href="loginPage.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="questionHub.html" id="link">Question Hub</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="submissionPage.html" id="link">Submissions</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" id="link">Logout</a>
+          </li>
+          
           </ul>
-        </div>
+          <div class="title">
+              <!-- <i class="material-icons title" id="icon">&#xe86f;</i> -->
+              <h2 class="title">Leaderboard</h2>
+          </div>
+          <div>
+              <div id="countdown">
+                <ul class="timer">
+                  <li><span id="hours"></span></li>
+                  <li><span id="minutes"></span></li>
+                  <li><span id="seconds"></span></li>
+                </ul>
+              </div>
+          </div>
+          
+          <div class="pisblogo">
+              <img src="pisblogo.png" class="pisblogo container-fluid" alt="">
+          </div>
       </div>
-    </nav>
+      </div>
+  </nav>
+
+
     <div class="box row">
       <div class="col-lg-3 col-md-3 leftcol">
         <center>
@@ -252,11 +361,14 @@
       </div>
     </div>
 
-    <footer class="text-center fixed-bottom">
-      <div class="container-fluid">
-        <div class="footer-text pt-3 pb-4">PISB <span>&copy</span></div>
-      </div>
-    </footer>
+    <section>
+        <footer class="text-center fixed-bottom bg-light footer">
+            <div class="container-fluid">
+              <div class="footer-text pt-3 pb-4" id="footer">PISB <span>&copy</span></div>
+            </div>
+        </footer>
+    </section>
+    <script src="navbar.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
