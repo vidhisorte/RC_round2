@@ -29,6 +29,13 @@
 
   .nav-link{
       border: 1px;
+      
+  }
+
+  .active{
+      /* text-decoration: underline; */
+      border-bottom: 2px #6cf9f0 solid;
+
   }
 
   .title{
@@ -84,13 +91,12 @@
       
   }
 
-  #home{
-      color: #6cf9f0;
-  }
-
   #link{
       color: #6cf9f0;
+      /* padding-bottom: 5px; */
+
   }
+
 
   #brand{
       color: #6cf9f0;
@@ -109,34 +115,35 @@
 
 <body>
   <!-- Navbar goes here -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 9vh;">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 9vh;"  style="background-color: #03121d !important;">
+    <div class="container-fluid" style="background-color: #03121d !important; z-index:9;">
     <a class="navbar-brand navbar-1" href="#" id="brand"><img src="rclogo.png" class="rclogo" alt="RC"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" id="home" href="loginPage.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="leaderBoard.html" id="link">Leaderboard</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="submissionPage.html" id="link">Submissions</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" id="link">Logout</a>
-        </li>
+            <li class="nav-item">
+                <a class="nav-link" href="instructionsPage.html" id="link">Instructions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="questionHub.html" id="link">Question Hub</a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="submissionPage.html" id="link">Submissions</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="leaderBoard.html" id="link">Leaderboard</a>
+              </li>
+  
+              <li class="nav-item">
+                  <a class="nav-link" href="loginPage.html" id="link">Logout</a>
+              </li>
         
         </ul>
-        <div class="title">
-            <!-- <i class="material-icons title" id="icon">&#xe86f;</i> -->
-            <h2 class="title">Question Hub</h2>
-        </div>
+        
         <div>
-            <div id="countdown">
+            <div class="w-100 d-flex p-0 m-0" id="countdown">
               <ul class="timer">
                 <li><span id="hours"></span></li>
                 <li><span id="minutes"></span></li>
