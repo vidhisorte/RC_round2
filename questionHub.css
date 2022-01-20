@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .my_card {
-  border: 2 px solid  ;
+  border: 2px solid  ;
   border-color: #6cf9f0;
   width: 17vw !important;
   height: fit-content;
@@ -97,7 +97,7 @@ body::-webkit-scrollbar-thumb {
 }
 .progress_div {
   text-align: center;
-  height: 5vh;
+  height: 4vh;
   width: 12vw;
   margin: 2vh auto;
   
@@ -175,7 +175,7 @@ width: 14vw;
   }
   .progress_div {
     text-align: center;
-    height: 5vh;
+    height: 4vh;
     width: 25vw;
     margin: 2vh auto;
   }
@@ -198,5 +198,11 @@ width: 14vw;
   }
   .card_container {
     width: 85vw;
+  }
+}
+@media screen and (max-height:653px) {
+  .myfooter{
+    position: relative;
+    margin-top: 2vh;
   }
 }

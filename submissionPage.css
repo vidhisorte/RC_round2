@@ -3,6 +3,7 @@
 body{
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: #112726;
 }
 body::-webkit-scrollbar{
   width:5px;
@@ -25,7 +26,7 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   flex-direction: column;
   /* margin-top: 1vh; */
-  background-color: #112726;
+  /* background-color: #112726; */
 }
 /* card container styling */
 .card_container {
@@ -37,13 +38,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   height: auto;
-  min-height: 72.5vh;
+  min-height: 71.5vh;
   text-align: center;
 }
 #my_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2vh 10vw;
+  gap: 4vh 10vw;
 }
 /* card styling */
 .my_card {
@@ -132,11 +133,9 @@ background-color: #48d3ca;
 /* progress bar styling */
 .progress_div {
   text-align: center;
-  height: 5vh;
+  height: 4vh;
   width: 12vw;
-  margin: 2vh auto;
-  
- 
+  margin: 2vh auto; 
 }
 /* footer styling */
 #myfooterid {
@@ -170,7 +169,7 @@ background-color: #48d3ca;
     padding: 3vh 3vw;
   }
   .my_card {
-    border: 2 px solid rgb(146, 146, 146);
+    border: 2px solid rgb(146, 146, 146);
     width: 25vw !important;
     padding: 1vw;
   }
@@ -203,7 +202,7 @@ background-color: #48d3ca;
   }
   .progress_div {
     text-align: center;
-    height: 5vh;
+    height: 4vh;
     width: 30vw;
     margin: 2vh auto;
   }
@@ -224,5 +223,11 @@ background-color: #48d3ca;
   .tab button {
     padding: 5px 5px;
     transition: 0.1s;
+  }
+}
+@media screen and (max-height:653px) {
+  #myfooterid{
+    position: relative !important;
+    margin-top: 2vh;
   }
 }

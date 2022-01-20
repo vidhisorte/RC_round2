@@ -18,86 +18,86 @@
   </head>
 
   <style>
-    
-    .pisblogo{
-        float: right;
-        height: 50px;
-        width: 150px;
-        margin-left: auto;
+    .pisblogo {
+      float: right;
+      height: 50px;
+      width: 150px;
+      margin-left: auto;
     }
 
-    .rclogo{
-        height: 50px;
-        width: 75px;
+    .rclogo {
+      height: 50px;
+      width: 75px;
     }
 
-    .nav-link{
-        border: 1px;
+    .nav-link {
+      border: 1px;
     }
 
-    .title{
-        margin-left: auto;
-        display: inline-block;
-        color: #6cf9f0;
+    .title {
+      margin-left: auto;
+      display: inline-block;
+      color: #6cf9f0;
     }
 
-    .timer{
-        display: inline-block;
-        /* margin-left: auto; */
-        color: #6cf9f0;
-        text-decoration: none;
-        list-style-type: none;
-        margin-left: auto;
+    .timer {
+      display: inline-block;
+      /* margin-left: auto; */
+      color: #6cf9f0;
+      text-decoration: none;
+      list-style-type: none;
+      margin-left: auto;
     }
 
     li {
-        /* margin-left: auto; */
-        display: inline-block;
-        font-size: 1em;
-        list-style-type: none;
-        padding: 0.5em;
-        text-transform: uppercase;
+      /* margin-left: auto; */
+      display: inline-block;
+      font-size: 1em;
+      list-style-type: none;
+      padding: 0.5em;
+      text-transform: uppercase;
     }
 
-    #countdown{
-        /* margin-left: auto; */
-        /* margin-right: 40px; */
-        /* display: inline-block; */
-        margin-left: 200px;
-        font-size: 20px;
-        /* margin-top: 10px; */
+    #countdown {
+      /* margin-left: auto; */
+      /* margin-right: 40px; */
+      /* display: inline-block; */
+      margin-left: 200px;
+      font-size: 20px;
+      /* margin-top: 10px; */
     }
 
-    .navbar{
-    background-color: #03121d !important;
-    /* height: 70px; */
+    .navbar {
+      background-color: #03121d !important;
+      /* height: 70px; */
     }
-    .navbar-1,.nav-link,.nav-item{
-        color: #6cf9f0;
-    }
-
-    .footer{
-    position: fixed;
-    height: 55px;
-    background-color: #03121d !important;
+    .navbar-1,
+    .nav-link,
+    .nav-item {
+      color: #6cf9f0;
     }
 
-    #footer{
-        background-color: #03121d !important;
-        color: #6cf9f0;
-        
+    .footer {
+      position: fixed;
+      height: 55px;
+      background-color: #03121d !important;
     }
 
-    #home{
-        color: #6cf9f0;
+    #footer {
+      background-color: #03121d !important;
+      color: #6cf9f0;
     }
 
-    #link{
-        color: #6cf9f0;
+    #home {
+      color: #6cf9f0;
     }
 
-    #brand{
-        color: #6cf9f0;
+    #link {
+      color: #6cf9f0;
+    }
+
+    #brand {
+      color: #6cf9f0;
     }
 
     /* #icon{
@@ -109,52 +109,65 @@
         margin-right: 100px;
         float: right;
     } */
-</style>
+  </style>
 
   <body>
     <!-- Navbar goes here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 9vh;">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="height: 9vh"
+    >
       <div class="container-fluid">
-      <a class="navbar-brand navbar-1" href="#" id="brand"><img src="rclogo.png" class="rclogo" alt="RC"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand navbar-1" href="#" id="brand"
+          ><img src="rclogo.png" class="rclogo" alt="RC"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-              <a class="nav-link active" aria-current="page" id="home" href="loginPage.html">Home</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="leaderBoard.html" id="link">Leaderboard</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="questionHub.html" id="link">Question Hub</a>
-          </li>
-          <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="leaderBoard.html" id="link"
+                >Leaderboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="questionHub.html" id="link"
+                >Question Hub</a
+              >
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#" id="link">Logout</a>
-          </li>
-          
+            </li>
           </ul>
           <div class="title">
-              <!-- <i class="material-icons title" id="icon">&#xe86f;</i> -->
-              <h2 class="title">Submissions</h2>
+            <!-- <i class="material-icons title" id="icon">&#xe86f;</i> -->
+            <h2 class="title">Submissions</h2>
           </div>
           <div>
-              <div id="countdown">
-                <ul class="timer">
-                  <li><span id="hours"></span></li>
-                  <li><span id="minutes"></span></li>
-                  <li><span id="seconds"></span></li>
-                </ul>
-              </div>
+            <div id="countdown">
+              <ul class="timer">
+                <li><span id="hours"></span></li>
+                <li><span id="minutes"></span></li>
+                <li><span id="seconds"></span></li>
+              </ul>
+            </div>
           </div>
-          
+
           <div class="pisblogo">
-              <img src="pisblogo.png" class="pisblogo container-fluid" alt="">
+            <img src="./img/pisblogo.png" class="pisblogo container-fluid" alt="" />
           </div>
+        </div>
       </div>
-      </div>
-  </nav>
+    </nav>
     <!-- your code goes here -->
     <div class="my_container">
       <div class="tab">
@@ -170,14 +183,11 @@
       </div>
     </div>
     <!-- Footer goes here -->
-    <section>
-      <footer class="text-center fixed-bottom bg-light footer">
-          <div class="container-fluid">
-            <div class="footer-text pt-3 pb-4" id="footer">PISB <span>&copy</span></div>
-          </div>
-      </footer>
-  </section>
-  <script src="navbar.js"></script>
+    <footer class="text-center fixed-bottom" id="myfooterid">
+      <div class="container-fluid">
+        <div style="color:whitesmoke;" class="footer-text pt-3 pb-4">PISB <span>&copy</span></div>
+      </div>
+    </footer>
   </body>
   <script src="SubmissionPage.js"></script>
   <script
@@ -186,4 +196,3 @@
     crossorigin="anonymous"
   ></script>
 </html>
-
