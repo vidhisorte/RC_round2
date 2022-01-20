@@ -44,18 +44,19 @@ footer {
   /* margin: auto; */
   border-radius: 15px;
   /* background: #112726; */
+  background-color: #03121d;
   border: 2px solid #6cf9f0;
 }
 
 #main-con-2 {
-  background-color: #03121d;
+  background-color: #0b1529;
   box-shadow: 4px 4px 8px #6cf9f0;
   border: 2px solid #6cf9f0;
   border-radius: 15px;
 }
 
 #user-card {
-  background-color: #03121d;
+  background-color: #0b1529;
   box-shadow: 4px 4px 8px #6cf9f0;
   border: 2px solid #6cf9f0;
   border-radius: 15px;
@@ -68,7 +69,7 @@ footer {
 }
 
 .podium {
-  background-color: #03121d;
+  background-color: #0b1529;
   box-shadow: 1px 0px 8px #6cf9f0;
   border: 2px solid #6cf9f0;
 }
