@@ -11,8 +11,9 @@ html {
 }
 
 * {
+  color: white;
+  /* overflow-y: hidden; */
   box-sizing: border-box;
-  color: #6cf9f0;
 }
 
 nav {
@@ -25,6 +26,7 @@ nav a {
 }
 
 footer {
+  color: whitesmoke;
   background-color: #112726;
   border-top: 1px solid #6cf9f0;
 }
@@ -41,7 +43,7 @@ footer {
 .info-plate {
   /* margin: auto; */
   border-radius: 15px;
-  /* background: #012220; */
+  /* background: #112726; */
   border: 2px solid #6cf9f0;
 }
 
@@ -62,6 +64,7 @@ footer {
 .dp,
 .user {
   background-color: #03121d;
+  font-size: 2rem;
 }
 
 .podium {
@@ -95,6 +98,9 @@ footer {
   padding-left: 0;
 }
 @media only screen and (min-width: 850px) {
+  * {
+    overflow-y: hidden;
+  }
   #right-section {
     width: 60%;
   }
