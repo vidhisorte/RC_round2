@@ -33,11 +33,21 @@
         border: 1px;
     }
 
+    .active{
+      /* text-decoration: underline; */
+      border-bottom: 2px #6cf9f0 solid;
+
+  }
+
     .title{
         margin-left: auto;
         display: inline-block;
         color: #6cf9f0;
-        margin-right: 50px;
+        /* margin-right: 50px; */
+    }
+
+    #icon{
+      margin-left: 50px;
     }
 
     .timer{
@@ -48,6 +58,15 @@
         list-style-type: none;
         margin-left: auto;
     }
+/* 
+    .timeritems{
+      height: 50px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 145px;
+    } */
 
     li {
         /* margin-left: auto; */
@@ -77,18 +96,19 @@
 
     .footer{
     position: fixed;
-    height: 70px;
+    height: 55px;
     background-color: #03121d !important;
     }
 
     #footer{
         background-color: #03121d !important;
-        color: #6cf9f0;
+        color: whitesmoke;
         
     }
 
     #home{
         color: #6cf9f0;
+        margin-left: 50px;
     }
 
     #link{
@@ -102,16 +122,28 @@
   <body>
     <section>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid" style="background-color: #03121d !important;">
+        <div class="container-fluid" style="background-color: #03121d !important; z-index:9;">
           <a class="navbar-brand navbar-1" href="#" id="brand"><img src="rclogo.png" class="rclogo" alt="RC"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- <div class="title m-auto">
+            <i class="material-icons title" id="icon">&#xe86f;</i>
+            <h2 class="title">Coding Page</h2>
+        </div> -->
+        <div>
+          <div class=" w-100 d-flex p-0 m-0" id="countdown">
+            <ul class="timer w-100 p-0 m-auto align">
+              <li><span id="hours" class="timeritems"></span></li>
+              <li><span id="minutes" class="timeritems"></span></li>
+              <li><span id="seconds" class="timeritems"></span></li>
+            </ul>
+          </div>
+      </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" id="home" href="loginPage.html">Home</a>
-              </li>
+              
               <!-- <li class="nav-item">
                   <a class="nav-link" href="#" id="link">Leaderboard</a>
               </li> -->
@@ -119,25 +151,14 @@
                   <a class="nav-link" href="questionHub.html" id="link">Question Hub</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#" id="link">Logout</a>
+                  <a class="nav-link" href="loginPage.html" id="link">Logout</a>
               </li>
               
               </ul>
             </div>
-              <div class="title m-auto">
-                  <i class="material-icons title" id="icon">&#xe86f;</i>
-                  <h2 class="title">Coding Page</h2>
-              </div>
+              
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div>
-                  <div class=" w-100 d-flex p-0 m-0 " id="countdown">
-                    <ul class="timer w-100 p-0 m-auto align">
-                      <li><span id="hours"></span></li>
-                      <li><span id="minutes"></span></li>
-                      <li><span id="seconds"></span></li>
-                    </ul>
-                  </div>
-              </div>
+              
               
               <div class="pisblogo">
                   <img src="pisblogo.png" class="pisblogo container-fluid" alt="">
@@ -186,13 +207,28 @@
           <div class="col-md-6" id="col-2">
             <div class="container">
               <div class="row" id="upperBtns">
-                <div class="col">
+                <div class="col upperbtnssss">
                   <button onclick="darkmode()" class="modebtns" id="darkmodebtn">
                     <i class="fas fa-moon"></i>
                   </button>
                   <button onclick="lightmode()" class="modebtns" id="lightmodebtn">
                     <i class="fas fa-sun"></i>
                   </button> 
+                  <select class="selectpicker" data-live-search="true" class="form-control dropdownmenu" name="Language" id="mode" onchange="changeMode()">
+                    <option value="c" id="c" selected>C</option>
+                    <option value="c++" id="c++">C++</option>
+                    <option value="python2" id="python2">Python</option>
+                    
+                    <option value="java" id="java">Java</option>
+                  </select>
+
+                  <!-- <select class="selectpicker" data-live-search="true" class="form-control dropdownmenu" name="Language" id="mode" onchange="changeMode()">
+                    <option value="c" id="c" selected>C</option>
+                    <option value="c++" id="c++">C++</option>
+                    <option value="python2" id="python2">Python2</option>
+                    <option value="python3" id="python3">Python3</option>
+                    <option value="java" id="java">Java</option>
+                  </select> -->
                   
                   <!-- <button type="button" class="btn btn-dark" onclick="lightmode()">Switch Mode</button>
                   <button type="button" class="btn btn-dark" onclick="darkmode()">Switch Mode</button> -->
@@ -203,16 +239,16 @@
                     <i class="fas fa-sun"></i>
                   </button> -->
                 </div>
-                <div class="col dropdown">
-                  <select class="selectpicker" data-live-search="true" class="form-control dropdownmenu" name="Language" id="mode" onchange="changeMode()">
+                <div class="col dropdown upperbtnssss">
+                  <!-- <select class="selectpicker" data-live-search="true" class="form-control dropdownmenu" name="Language" id="mode" onchange="changeMode()">
                     <option value="c" id="c" selected>C</option>
                     <option value="c++" id="c++">C++</option>
-                    <option value="python2" id="python2">Python2</option>
-                    <option value="python3" id="python3">Python3</option>
+                    <option value="python2" id="python2">Python</option>
+                    
                     <option value="java" id="java">Java</option>
-                  </select>
+                  </select> -->
                 </div>
-                <div class="col" id="score">
+                <div class="col upperbtnssss" id="score">
                   Score
                 </div>
               </div>
@@ -275,7 +311,7 @@
                 
                 
               </div>-->
-              <div class="d-fsm-lex justify-content-sm-evenly flex-wrap" id="lowerbuttons">
+              <!-- <div class="d-fsm-lex justify-content-sm-evenly flex-wrap" id="lowerbuttons">
                 <div class="fileUpload btn btn-primary lower-buttons" id="choose">
                   <label class="upload">
                     <input name='File' type="file"/>
@@ -286,7 +322,31 @@
                 <button type="button" class="btn btn-primary lower-buttons" id="run">Run</button>
                 <button type="button" class="btn btn-primary lower-buttons" id="submit">Submit</button>
               </div>
-            </div> 
+            </div>  -->
+
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <div class="col btnsssss">
+                  <div class="fileUpload btn btn-primary lower-buttons" id="choose">
+                    <label class="upload">
+                      <input name='File' type="file"/>
+                    Choose File
+                    </label>
+                  </div>
+                </div>
+                <div class="col btnsssss">
+                  <button type="button" class="btn btn-primary lower-buttons" id="load">Load Buffer</button>
+                </div>
+                <div class="col btnsssss">
+                  <button type="button" class="btn btn-primary lower-buttons" id="run">Run Code</button>
+                </div>
+                <div class="col btnsssss">
+                  <button type="button" class="btn btn-primary lower-buttons" id="submit">Submit Code</button>
+                </div>
+
+              </div>
+
+            </div>
             
             <!-- <div class="container">
                 <div class="row" id="upper-buttons">
