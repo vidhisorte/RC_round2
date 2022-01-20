@@ -24,7 +24,18 @@ body{
   background-color: #03121d;
 }
 .maindiv::-webkit-scrollbar{
-  display: none;
+  width: 15px;
+  
+}
+.maindiv::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: transparent;
+  
+}
+.maindiv::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: linear-gradient(#04534e48,#4feee377);
+
 }
 
 .heading{
