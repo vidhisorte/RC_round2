@@ -13,6 +13,9 @@ body{
 }
 .card-header{
 	border-color: #ddd7d7;
+	font-size: 2em!important; 
+	background-color: #0b1529;
+	text-align: center;
 }
 .wrapper{
 	display:block;
@@ -37,7 +40,9 @@ body{
 .nav-link{
 	border: 1px;
 }
-
+.card-left{
+	font-size: 1.2em;
+}
 .title{
 	margin-left: auto;
 	display: inline-block;
@@ -120,6 +125,12 @@ background-color: #03121d !important;
 	
 }
 @media (max-width: 1300px){
+	.card-header{
+		font-size: 1em!important;
+	}
+	.card-left{
+		font-size: 1em;
+	}
 	.nav-top{
 		height: 10vh !important;
 	}
@@ -133,3 +144,4 @@ background-color: #03121d !important;
 		height: 41vh !important;
 	}
 }
+
