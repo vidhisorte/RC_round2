@@ -13,10 +13,11 @@ body{
 }
 .card-header{
 	border-color: #ddd7d7;
-	font-size: 2em!important; 
+	font-size: 1.2em!important; 
 	background-color: #0b1529;
 	text-align: center;
 }
+
 .wrapper{
 	display:block;
 	width: 100%;
@@ -41,7 +42,7 @@ body{
 	border: 1px;
 }
 .card-left{
-	font-size: 1.2em;
+	font-size: 0.8em !important;
 }
 .title{
 	margin-left: auto;
@@ -122,14 +123,16 @@ background-color: #03121d !important;
 		width: 60px !important;
 		height: 60px !important;
 	}
-	
 }
 @media (max-width: 1300px){
 	.card-header{
-		font-size: 1em!important;
+		font-size: 1.1em !important;
+	}
+	.card-circle{
+		font-size: 1em;
 	}
 	.card-left{
-		font-size: 1em;
+		font-size: 1em !important;
 	}
 	.nav-top{
 		height: 10vh !important;
@@ -143,5 +146,6 @@ background-color: #03121d !important;
 	.row-main{
 		height: 41vh !important;
 	}
+	
 }
 
