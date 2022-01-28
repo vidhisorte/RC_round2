@@ -73,7 +73,7 @@
         display: inline-block;
         font-size: 1em;
         list-style-type: none;
-        padding: 0.5em;
+        /* padding: 0.5em; */
         text-transform: uppercase;
     }
 
@@ -81,22 +81,25 @@
         /* margin-left: auto; */
         /* margin-right: 40px; */
         /* display: inline-block; */
-        margin-left: 200px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        
         font-size: 20px;
         /* margin-top: 10px; */
     }
 
     .navbar{
     background-color: #03121d !important;
-    /* height: 70px; */
+     height: 70px; 
     }
     .navbar-1,.nav-link,.nav-item{
         color: #6cf9f0;
     }
+    
 
     .footer{
     position: fixed;
-    height: 55px;
+    height: 60px;
     background-color: #03121d !important;
     }
 
@@ -132,15 +135,7 @@
             <i class="material-icons title" id="icon">&#xe86f;</i>
             <h2 class="title">Coding Page</h2>
         </div> -->
-        <div>
-          <div class=" w-100 d-flex p-0 m-0" id="countdown">
-            <ul class="timer w-100 p-0 m-auto align">
-              <li><span id="hours" class="timeritems"></span></li>
-              <li><span id="minutes" class="timeritems"></span></li>
-              <li><span id="seconds" class="timeritems"></span></li>
-            </ul>
-          </div>
-      </div>
+        
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               
@@ -156,7 +151,15 @@
               
               </ul>
             </div>
-              
+              <div>
+                <div class=" w-100 d-flex p-0" id="countdown">
+                  <ul class="timer w-100 p-0 m-auto align">
+                    <li><span id="hours" class="timeritems"></span> :</li>
+                    <li><span id="minutes" class="timeritems"></span> :</li>
+                    <li><span id="seconds" class="timeritems"></span></li>
+                  </ul>
+                </div>
+              </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               
               
@@ -188,17 +191,31 @@
             <div class="row">
                 <div class="col align-self-start">
                   <!-- <textarea name="" id="questions" cols="74" rows="9"></textarea> -->
-                  <textarea readonly name="" id="questions" style="height: 275px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0; box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke; resize: none;"></textarea>
+                  <textarea readonly name="" id="questions" style="height: 275px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0; box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke; resize: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, beatae. Unde incidunt eveniet totam fugit nam tenetur nulla autem quae, reprehenderit fuga dolorem ad consectetur odio illo consequatur! Ratione obcaecati voluptates, veritatis tempore eveniet inventore esse placeat enim itaque blanditiis molestiae minus sed distinctio recusandae quae tenetur id dignissimos voluptatibus architecto atque harum. Reiciendis autem voluptatibus quia veniam, cupiditate delectus quas enim quasi facilis nobis voluptatem natus quo magni commodi tenetur, porro distinctio deleniti reprehenderit neque dolorem quidem? Accusamus in vel modi iure consequuntur quam tempora laboriosam repellendus consequatur fugit, nulla, neque excepturi? Sint ab doloribus non eaque debitis quibusdam assumenda velit numquam ut quas repellendus sit minima optio accusantium exercitationem tempore quasi dolorem, cumque reprehenderit nisi, dignissimos nostrum. Adipisci consequatur placeat architecto facilis itaque, voluptatem repellat quaerat quae quod accusantium atque non perspiciatis. Minus distinctio, natus deleniti laboriosam voluptates delectus ea placeat culpa, dolor accusantium eligendi! Dolor, nobis facere!</textarea>
                 </div>
             </div>
             <div class="row align-items-start to_flex">
                 <div class="col-sm-6">
                   <!-- <textarea name="" id="input" cols="32" rows="8"></textarea> -->
-                  <textarea readonly name="" id="input" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;"></textarea>
+                  <textarea readonly name="" id="input" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;">
+INPUT
+
+
+2
+2
+3
+                    </textarea>
                 </div>
                 <div class="col-sm-6">
                   <!-- <textarea name="" id="output" cols="32" rows="8"></textarea> -->
-                  <textarea readonly name="" id="output" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;"></textarea>
+                  <textarea readonly name="" id="output" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;">
+OUTPUT
+
+
+NO
+YES
+1 3 2
+                    </textarea>
                 </div>
             </div>
           </div>
