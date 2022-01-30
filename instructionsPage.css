@@ -61,6 +61,8 @@ body{
   background-color: #112726;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   box-shadow: 2px 2px 4px #6cf9f0;
   /* background-color: #03121d; */
   /* justify-content: center; */
@@ -72,28 +74,16 @@ body{
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   margin-top: 30px;
-  margin-right: 20%;
+  margin-right: 10%;
   color: #f6f6f6;
   
 }
-.two{
-  background-color: #112726;
-display: flex;
-flex-direction: row;
-/* background-color: #03121d; */
-border: 2px solid #6cf9f0 ; 
-box-shadow: 2px 2px 4px #6cf9f0;;
-/* border-left: none;  */
-border-bottom-right-radius: 50px;
-border-top-right-radius: 50px;
-border-top-left-radius: 50px;
-border-bottom-left-radius: 50px;
-margin-top: 30px;
-margin-left: 25%;
-margin-right: 5%;
-color: #fbfbfb;
-}
 
+input[type=checkbox]{
+  padding: 1em;
+  width: 1.1em;
+  height: 2em;
+}
 
 .process{
 width: 100%;
@@ -112,7 +102,7 @@ align-items: center;
 justify-content: center;
  margin-top: 1%; /* change */
 margin-bottom: 30px;
-margin-left: -3rem;
+
 padding: 14px;
 }
 .process .btn{
@@ -197,6 +187,10 @@ position: relative;
   padding: 5px;
 }
 }
+
+
+
+
 
 
 
