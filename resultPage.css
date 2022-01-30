@@ -41,10 +41,10 @@ footer {
 
 .info-plate {
   /* margin: auto; */
-  border-radius: 15px;
+  /* border-radius: 15px; */
   /* background: #112726; */
   background-color: #03121d;
-  border: 2px solid #6cf9f0;
+  /* border: 2px solid #6cf9f0; */
 }
 
 #main-con-2 {
@@ -52,6 +52,7 @@ footer {
   box-shadow: 4px 4px 8px #6cf9f0;
   border: 2px solid #6cf9f0;
   border-radius: 15px;
+  padding-bottom: 1.5%;
 }
 
 #user-card {
@@ -59,15 +60,27 @@ footer {
   box-shadow: 4px 4px 8px #6cf9f0;
   border: 2px solid #6cf9f0;
   border-radius: 15px;
+  padding-bottom: 2%;
 }
 
 .score {
   font-size: 1.2rem;
 }
 
+.card-sec {
+  background-color: #03121d;
+  border-radius: 15px;
+  border: 2px solid #6cf9f0;
+  padding: 0 1rem;
+}
+
+.dp {
+  border: 2px solid #6cf9f0;
+  background-color: #03121d;
+}
+
 .dp,
 .user {
-  background-color: #03121d;
   font-size: 2rem;
 }
 
@@ -78,8 +91,9 @@ footer {
   border: 2px solid #6cf9f0;
 }
 
-.container-heading {
-  background-color: #03121d;
+.heading {
+  /* background-color: #03121d; */
+  padding: 0.3rem;
 }
 
 .myflex {
@@ -121,18 +135,25 @@ footer {
   }
 
   #user-card {
+    font-size: 1.1rem;
     height: fit-content;
   }
 
   #main-con-2 {
     width: 90%;
     /* height: 234px; */
+    padding: 0 2% 0.7rem;
+    font-size: 1.1rem;
   }
 
   #main {
     width: 60%;
     height: fit-content;
     float: left;
+  }
+
+  .podium {
+    font-size: 2rem;
   }
 }
 
