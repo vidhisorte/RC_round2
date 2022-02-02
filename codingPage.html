@@ -21,12 +21,16 @@
         float: right;
         height: 50px;
         width: 150px;
-        margin-left: auto;
+        /* margin-left: auto; */
     }
 
     .rclogo{
         height: 50px;
         width: 75px;
+    }
+
+    .ulist{
+      margin-right: 0;
     }
 
     .nav-link{
@@ -131,43 +135,45 @@
               <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- <div class="title m-auto">
-            <i class="material-icons title" id="icon">&#xe86f;</i>
-            <h2 class="title">Coding Page</h2>
-        </div> -->
+          <div>
+            <div class=" w-100 d-flex p-0 flex-grow-1" id="countdown">
+              <ul class="timer w-100 p-0 m-auto align">
+                <li><span id="hours" class="timeritems"></span> :</li>
+                <li><span id="minutes" class="timeritems"></span> :</li>
+                <li><span id="seconds" class="timeritems"></span></li>
+              </ul>
+            </div>
+          </div>
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto ulist">
               
-              <!-- <li class="nav-item">
-                  <a class="nav-link" href="#" id="link">Leaderboard</a>
-              </li> -->
+              <li class="nav-item">
+                  <a class="nav-link" href="leaderBoard.html" id="link">Leaderboard</a>
+              </li>
               <li class="nav-item">
                   <a class="nav-link" href="questionHub.html" id="link">Question Hub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="submissionPage.html" id="link">Submissions</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="loginPage.html" id="link">Logout</a>
               </li>
               
-              </ul>
+            </ul>
+
+            <div class="pisblogo">
+              <img src="pisblogo.png" class="pisblogo container-fluid" alt="">
             </div>
-              <div>
-                <div class=" w-100 d-flex p-0" id="countdown">
-                  <ul class="timer w-100 p-0 m-auto align">
-                    <li><span id="hours" class="timeritems"></span> :</li>
-                    <li><span id="minutes" class="timeritems"></span> :</li>
-                    <li><span id="seconds" class="timeritems"></span></li>
-                  </ul>
-                </div>
-              </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              
-              
-              <div class="pisblogo">
-                  <img src="pisblogo.png" class="pisblogo container-fluid" alt="">
-              </div>
-           </div>
           </div>
+          
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              
+
+           </div> -->
+        </div>
       </nav>
   </section>
   <section>
@@ -189,32 +195,39 @@
         <div class="row">
           <div class="col-md-6" id="col-1">
             <div class="row">
+
                 <div class="col align-self-start">
+                  <div class="d-flex">
+                    <button class="btn btn-primary lower-buttons" id="back" href="questionHub.html">
+                      <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <h4 class="text-center justify-content-center" id="qno">Question No</h4>
+                  </div>
                   <!-- <textarea name="" id="questions" cols="74" rows="9"></textarea> -->
-                  <textarea readonly name="" id="questions" style="height: 275px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0; box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke; resize: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, beatae. Unde incidunt eveniet totam fugit nam tenetur nulla autem quae, reprehenderit fuga dolorem ad consectetur odio illo consequatur! Ratione obcaecati voluptates, veritatis tempore eveniet inventore esse placeat enim itaque blanditiis molestiae minus sed distinctio recusandae quae tenetur id dignissimos voluptatibus architecto atque harum. Reiciendis autem voluptatibus quia veniam, cupiditate delectus quas enim quasi facilis nobis voluptatem natus quo magni commodi tenetur, porro distinctio deleniti reprehenderit neque dolorem quidem? Accusamus in vel modi iure consequuntur quam tempora laboriosam repellendus consequatur fugit, nulla, neque excepturi? Sint ab doloribus non eaque debitis quibusdam assumenda velit numquam ut quas repellendus sit minima optio accusantium exercitationem tempore quasi dolorem, cumque reprehenderit nisi, dignissimos nostrum. Adipisci consequatur placeat architecto facilis itaque, voluptatem repellat quaerat quae quod accusantium atque non perspiciatis. Minus distinctio, natus deleniti laboriosam voluptates delectus ea placeat culpa, dolor accusantium eligendi! Dolor, nobis facere!</textarea>
+                  <textarea readonly name="" id="questions" style="height: 225px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0; box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke; resize: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, beatae. Unde incidunt eveniet totam fugit nam tenetur nulla autem quae, reprehenderit fuga dolorem ad consectetur odio illo consequatur! Ratione obcaecati voluptates, veritatis tempore eveniet inventore esse placeat enim itaque blanditiis molestiae minus sed distinctio recusandae quae tenetur id dignissimos voluptatibus architecto atque harum. Reiciendis autem voluptatibus quia veniam, cupiditate delectus quas enim quasi facilis nobis voluptatem natus quo magni commodi tenetur, porro distinctio deleniti reprehenderit neque dolorem quidem? Accusamus in vel modi iure consequuntur quam tempora laboriosam repellendus consequatur fugit, nulla, neque excepturi? Sint ab doloribus non eaque debitis quibusdam assumenda velit numquam ut quas repellendus sit minima optio accusantium exercitationem tempore quasi dolorem, cumque reprehenderit nisi, dignissimos nostrum. Adipisci consequatur placeat architecto facilis itaque, voluptatem repellat quaerat quae quod accusantium atque non perspiciatis. Minus distinctio, natus deleniti laboriosam voluptates delectus ea placeat culpa, dolor accusantium eligendi! Dolor, nobis facere!</textarea>
                 </div>
             </div>
             <div class="row align-items-start to_flex">
                 <div class="col-sm-6">
                   <!-- <textarea name="" id="input" cols="32" rows="8"></textarea> -->
-                  <textarea readonly name="" id="input" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;">
-INPUT
+                  <textarea name="" id="input" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;">
+                                  INPUT
 
 
-2
-2
-3
+    2
+    2
+    3
                     </textarea>
                 </div>
                 <div class="col-sm-6">
                   <!-- <textarea name="" id="output" cols="32" rows="8"></textarea> -->
                   <textarea readonly name="" id="output" style="height: 250px; width: 100%; background-color: #03121d; border: 1px solid #6cf9f0;box-shadow: 2px 2px 4px #6cf9f0;color: whitesmoke;resize: none;">
-OUTPUT
+                                  OUTPUT
 
 
-NO
-YES
-1 3 2
+    NO
+    YES
+    1 3 2
                     </textarea>
                 </div>
             </div>
@@ -231,7 +244,7 @@ YES
                   <button onclick="lightmode()" class="modebtns" id="lightmodebtn">
                     <i class="fas fa-sun"></i>
                   </button> 
-                  <select class="selectpicker" data-live-search="true" class="form-control dropdownmenu" name="Language" id="mode" onchange="changeMode()">
+                  <select class="selectpicker" data-live-search="true" class="dropdownmenu" name="Language" id="mode" onchange="changeMode()">
                     <option value="c" id="c" selected>C</option>
                     <option value="c++" id="c++">C++</option>
                     <option value="python2" id="python2">Python</option>
@@ -270,7 +283,7 @@ YES
                 </div>
               </div>
             </div>
-            <div class="editor">
+            <div class="editor" id="editor">
               <div class="editor_wrapper">
                 <div class="editor_body">
                   <div class="editor_code" id="editorCode">
@@ -342,11 +355,11 @@ YES
             </div>  -->
 
             <div class="container">
-              <div class="d-flex justify-content-between">
+              <div class="d-flex justify-content-space-between">
                 <div class="col btnsssss">
                   <div class="fileUpload btn btn-primary lower-buttons" id="choose">
                     <label class="upload">
-                      <input name='File' type="file"/>
+                      <input name='File' accept=".py,.cpp,.c,.java,.txt" id="inputFile" type="file"/>
                     Choose File
                     </label>
                   </div>
@@ -446,6 +459,10 @@ YES
           <div class="footer-text pt-3 pb-4" id="footer">PISB <span>&copy</span></div>
         </div>
       </footer>
+      
+      <script src="../ace-builds-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+      <script src="../ace-builds-master/src-noconflict/ext-language_tools.js"></script>
+
       <script src="lib/js/ace-editor/src-min/ace.js"></script>
       <script src="lib/js/ace-editor/src-min/mode-c_cpp.js"></script>
       <script src="lib/js/ace-editor/src-min/ext-language_tools.js"></script>
@@ -463,5 +480,6 @@ YES
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    
   </body>
 </html>

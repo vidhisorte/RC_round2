@@ -30,14 +30,14 @@ body {
 #input {
   margin-top: 2vh;
   margin-left: 0.25vh;
-  text-align: center;
+  text-align: left;
   padding-top: 5vh;
 }
 #output {
   margin-top: 2vh;
   margin-right: 1vh;
   margin-left: 0.25vh;
-  text-align: center;
+  text-align: left;
   padding-top: 5vh;
 }
 textarea::-webkit-scrollbar {
@@ -82,19 +82,19 @@ input[type="file"] {
   box-shadow: 2px 2px 4px #6cf9f0;
 }
 
-#lightmodebtn {
+#darkmodebtn {
   display: none;
   border: 1px solid #6cf9f0;
 }
 
 /* .dropdown{
-    box-shadow: 2px 2px 4px #6cf9f0;
-    border: 1px solid #6cf9f0;
-    background-color: #03121d;
-    border-radius: 4px;
-    margin: 0px;
-    padding: 0px;
-} */
+      box-shadow: 2px 2px 4px #6cf9f0;
+      border: 1px solid #6cf9f0;
+      background-color: #03121d;
+      border-radius: 4px;
+      margin: 0px;
+      padding: 0px;
+  } */
 
 select#mode.selectpicker {
   background-color: #03121d;
@@ -110,6 +110,15 @@ select#mode.selectpicker {
   padding-right: 10px;
 }
 
+.editor::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.editor {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 .codeeditdiv {
   flex: 100%;
   /* min-height: 350px; */
@@ -126,7 +135,10 @@ select#mode.selectpicker {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+  height: 72.5vh;
 }
+
 .editor_wrapper {
   width: 100%;
   height: 80%;
@@ -162,9 +174,19 @@ select#mode.selectpicker {
   width: 80px;
   cursor: pointer;
 }
+.editor_code::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.editor_code {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 .editor_code {
   position: relative;
-  height: 100%;
+  overflow: scroll;
+  height: 400px;
   width: 100%;
   top: 0;
   bottom: 0;
@@ -174,25 +196,27 @@ select#mode.selectpicker {
   /* word-wrap:normal; */
 }
 #lowerbuttons {
-  margin-top: 1px;
-  margin-bottom: 10vh;
+  /*1 margin-top: 1px;
+    margin-bottom: 10vh; 1*/
   /* margin-left: 2.5px;
-    margin-right: 2.5px; */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+      margin-right: 2.5px; */
+  /*1 text-align: center;
+    justify-content: center;
+    align-items: center; 1*/
+
   /* padding-left: 10vh;
-    padding-right: 10vh; */
+      padding-right: 10vh; */
 }
 
 /* .btnsssss{
-    border: 1px solid whitesmoke;
-} */
+      border: 1px solid whitesmoke;
+  } */
 
 .lower-buttons {
   border: 2px #6cf9f0 solid;
   background-color: #03121d;
   color: #6cf9f0;
+  border-radius: 1.5vh;
   margin-bottom: 10px;
 }
 
@@ -202,36 +226,46 @@ select#mode.selectpicker {
   color: whitesmoke;
 }
 
+#back {
+  margin-bottom: 1vh;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #6cf9f0;
+}
+
+#qno {
+  color: whitesmoke;
+  margin-left: 30vh;
+}
+
 .lbuttons {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  /*1 text-align: center;
+    justify-content: center;
+    align-items: center; 1*/
   width: fit-content;
   /* margin-left: 2.5px;
-    margin-right: 2.5px; */
-  margin-top: 2.5px;
-  margin-bottom: 2.5px;
-  display: inline-block;
+      margin-right: 2.5px; */
+  /*1 margin-top: 2.5px;
+    margin-bottom: 2.5px; 1*/
+  /* 1display: inline-block; */
 }
 #choose {
   /* margin-left: 10px; */
-  margin-top: 10px;
 }
 #load {
-  margin-left: 3vh;
-  margin-right: 0;
-  margin-top: 10px;
+  /* margin-left: 3vh;
+    margin-right: 0;
+    margin-top: 10px; */
 }
 #submit {
   /* margin-left: 10px; */
-  margin-right: 0;
-  margin-top: 10px;
-  float: right;
+  /* margin-right: 0;
+    margin-top: 10px;
+    float: right; */
 }
 #run {
-  margin-left: 6vh;
-  margin-right: 0;
-  margin-top: 10px;
+  /* margin-left: 6vh;
+    margin-right: 0;
+    margin-top: 10px; */
 }
 footer {
   height: 40px;
@@ -251,9 +285,9 @@ footer {
 }
 @media (max-width: 576px) and (min-width: 365px) {
   /* .to_flex{
-        display: flex;
-        flex-direction: row;
-    } */
+          display: flex;
+          flex-direction: row;
+      } */
 }
 @media (max-width: 338px) {
   .modebtns,
@@ -265,12 +299,12 @@ footer {
 }
 @media (max-width: 322px) {
   /* #run,#submit{
-        margin-left: 2.5px;
-        margin-right: 2.5px;
-    } */
+          margin-left: 2.5px;
+          margin-right: 2.5px;
+      } */
   /* #lowerBtns{
-        width: fit-content;
-    } */
+          width: fit-content;
+      } */
   body {
     width: fit-content;
   }
