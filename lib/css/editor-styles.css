@@ -208,9 +208,14 @@ select#mode.selectpicker {
       padding-right: 10vh; */
 }
 
-/* .btnsssss{
-      border: 1px solid whitesmoke;
-  } */
+/* .btnsssss {
+  border: 1px solid whitesmoke;
+} */
+
+.BTN {
+  width: 738px;
+  padding: 0;
+}
 
 .lower-buttons {
   border: 2px #6cf9f0 solid;
@@ -249,23 +254,23 @@ select#mode.selectpicker {
   /* 1display: inline-block; */
 }
 #choose {
-  /* margin-left: 10px; */
+  margin-top: 10px;
 }
 #load {
-  /* margin-left: 3vh;
-    margin-right: 0;
-    margin-top: 10px; */
+  margin-left: 4vh;
+  margin-right: 0;
+  margin-top: 10px;
 }
 #submit {
   /* margin-left: 10px; */
-  /* margin-right: 0;
-    margin-top: 10px;
-    float: right; */
+  margin-right: 0;
+  margin-top: 10px;
+  float: right;
 }
 #run {
-  /* margin-left: 6vh;
-    margin-right: 0;
-    margin-top: 10px; */
+  margin-left: 7vh;
+  margin-right: 0;
+  margin-top: 10px;
 }
 footer {
   height: 40px;
